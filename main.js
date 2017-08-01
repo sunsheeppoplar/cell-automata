@@ -46,14 +46,14 @@ function nextStep(board) {
 }
 
 function drawBoard(board) {
-	var Text = "";
+	var text = "";
 	for (var y = 0; y < ySize; ++y) {
 		for (var x = 0; x < xSize; ++x) {
-			Text += board[x][y] == alive ? "o" : "_";
+			text += board[x][y] == alive ? "o" : "_";
 		}
-		Text += "<br/>";
+		text += "<br/>";
 	}
-	document.getElementById("board").innerHTML = Text;
+	document.getElementById("board").innerHTML = text;
 }
 
 function main() {
